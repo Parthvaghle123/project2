@@ -1,0 +1,171 @@
+#root {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); /* Adjusts columns based on screen size */
+    grid-gap: 10px;
+    margin-top: 25px;
+    /* justify-content: space-evenly; */
+}
+
+.box {
+    width: 90%;
+    /* margin: 12px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 15px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* margin-left: 20px; */
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.img-box {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.images {
+    max-height: 90%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+}
+
+.bottom {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+
+h2 {
+    font-size: 20px;
+    color: black;
+}
+
+h4{
+    font-size: 17px;
+    color: black;
+}
+
+button {
+    width: 60%;
+    border: none;
+    border-radius: 50px;
+    background-color:#049f75c9;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: black;
+    transition: background 0.3s ease;
+    
+}
+
+button:hover {
+    background-color:white;
+    color:black;
+    border: 1px solid #049f75c9; /* Slightly darker shade on hover */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    #root {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+    
+  
+}
+
+@media (min-width: 2560px) {
+    #root {
+        grid-template-columns: repeat(3, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    #root {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+    .box{
+        width: 100%;
+    }
+   
+}
+@media (min-width: 1440px) {
+    #root {
+        grid-template-columns: repeat(3, 1fr); /* 2 columns for tablets */
+    }
+    .box{
+        width: 100%;
+    }
+}
+@media (min-width: 1024px) {
+    #root {
+        grid-template-columns: repeat(3, 1fr); /* 2 columns for tablets */
+    }
+}
+.hero-section2{
+    min-height: 70px;
+  }
+.btn{
+    background-color: none;
+    width: 20%;
+
+}
+.btn:hover{
+    background-color: white;
+}
+.hero-section {
+    min-height: 220px;
+    background-color: white;
+  }
+  .box1{
+    transition: all 1s;
+  }
+  .box1:hover {
+    transform: scale(1.15);
+}
+.hero-section1 {
+    min-height: 520px;
+    background-color: rgba(220, 218, 218, 0.858);
+  }
+  .hero-section3{
+    min-height: 530px;
+    background-color: rgba(214, 210, 210, 0.858);
+  }
+  .card-title{
+    margin-top: 180px;
+  }
+  .btn1{
+    width: 30%;
+  }
+  .btn1:hover{
+    background-color: white;
+    color: green;
+  }
+.p{
+    font-size: 30px;
+}
+.btn2:hover{
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+}
